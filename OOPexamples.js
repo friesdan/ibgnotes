@@ -1,4 +1,5 @@
-//I am one month into coding, please don't take this as gospel. This is a homework assignment for a course I'm doing online. Perhaps you can guess the name of the teacher :)
+//I am one month into coding, please don't take this as gospel. This is a homework assignment for a course I'm doing online. 
+//Perhaps you can guess the name of the teacher :)
 
 // OOP in JavScript, examples:
 
@@ -7,7 +8,8 @@
 const strictTeachings = ["You should be able to rattle this off at a cocktail party", "You should ALREADY know this stuff", "I'm not kidding!"];
 const laxTeachings = ["I don't expect you to know this yet", "You'll get there at your own pace.", ]
 
-//Polymorphism 2: We can apply the same method ".length" to both the arrays (to return the number of elements in the array), as well as to the strings (to return the length of the sting):
+//Polymorphism 2: We can apply the same method ".length" to both the arrays (to return the number of elements in the array),
+// ...as well as to the strings (to return the length of the sting):
 
 console.log(laxTeachings.length)
 //2  
@@ -22,7 +24,9 @@ console.log(laxTeachings[0].length);
 class Teacher {
  constructor(name, school, attentionSpan) {
 
-  //Encapsulation 1: by convention in JavaScript, if we prepend an object's name with an underscore (_), it is meant to stay private from outside the scope of the object. This is a convention, not a formality, but approaches other stricter OOP languages' concepts of privacy. The underscore dissuades tampering. In order to access the values, "getters" are set, below.
+  //Encapsulation 1: by convention in JavaScript, if we prepend an object's name with an underscore (_), it is meant to stay private from outside the scope of the object. 
+  //This is a convention, not a formality, but approaches other stricter OOP languages' concepts of privacy. 
+  //The underscore dissuades tampering. In order to access the values, "getters" are set, below.
   this._name = name;
   this._school = school;
   this._attentionSpan = attentionSpan;
@@ -38,7 +42,8 @@ class Teacher {
  get school() {
   return this._school
  }
- //Abstraction 1: Here is a method which returns a random teaching from the 2 arrays above. It is a multi-faceted function whose complexity is abstracted into the single command teachUs():
+ //Abstraction 1: Here is a method which returns a random teaching from the 2 arrays above. 
+ //It is a multi-faceted function whose complexity is abstracted into the single command teachUs():
  teachUs() {
   const styleSelector = Math.floor(Math.random() * 2);
   const teachingSelector = Math.floor(Math.random() * 2);
@@ -59,7 +64,8 @@ console.log(dLewis.school);
 //IBG
 
 
-//Abstraction 2: We have wrapped the complexity of the "teachUs()" method, and we call on it's set of operations by appending it to the object:
+//Abstraction 2: We have wrapped the complexity of the "teachUs()" method, 
+//and we call on it's set of operations by appending it to the object:
 console.log(dLewis.teachUs());
 //You should ALREADY know this stuff
 console.log(dLewis.teachUs());
