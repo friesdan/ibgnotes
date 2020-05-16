@@ -38,7 +38,7 @@ class Teacher {
  get school() {
   return this._school
  }
- //Abstraction 1: Here is a method, a multi-faceted function whose complexity is abstracted into the single command teachUs():
+ //Abstraction 1: Here is a method which returns a random teaching from the 2 arrays above. It is a multi-faceted function whose complexity is abstracted into the single command teachUs():
  teachUs() {
   const styleSelector = Math.floor(Math.random() * 2);
   const teachingSelector = Math.floor(Math.random() * 2);
