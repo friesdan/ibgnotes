@@ -1,3 +1,5 @@
+//I am one month into coding, please don't take this as gospel. This is a homework assignment for a course I'm doing online. Perhaps you can guess the name of the teacher :)
+
 // OOP in JavScript, examples:
 
 //Polymorphism: Here are 2 arrays, containing strings:
